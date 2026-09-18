@@ -9,16 +9,16 @@
 | **Repo URL** | https://github.com/asunnyboy861/Booply |
 | **Visibility** | Public |
 | **Primary Language** | Swift |
-| **GitHub Pages** | ⏳ Pending (enabled in PHASE 7 from `/docs` folder) |
+| **GitHub Pages** | ✅ **ENABLED** (from `/docs` folder) |
 
 ## Policy Pages (Deployed from Main Repository /docs)
 
 | Page | URL | Status |
 |------|-----|--------|
-| Landing Page | https://asunnyboy861.github.io/Booply/ | ⏳ Pending |
-| Support | https://asunnyboy861.github.io/Booply/support.html | ⏳ Pending |
-| Privacy Policy | https://asunnyboy861.github.io/Booply/privacy.html | ⏳ Pending |
-| Terms of Use | https://asunnyboy861.github.io/Booply/terms.html | ⏳ Pending |
+| Landing Page | https://asunnyboy861.github.io/Booply/ | ✅ Active |
+| Support | https://asunnyboy861.github.io/Booply/support.html | ✅ Active |
+| Privacy Policy | https://asunnyboy861.github.io/Booply/privacy.html | ✅ Active |
+| Terms of Use | https://asunnyboy861.github.io/Booply/terms.html | ✅ Active |
 
 ## Repository Structure
 
