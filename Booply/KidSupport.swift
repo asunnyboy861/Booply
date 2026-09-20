@@ -161,6 +161,21 @@ final class SpeechHelper: NSObject, AVSpeechSynthesizerDelegate {
     }
 }
 
+extension VortexSystem {
+    static let monoBurst: VortexSystem = VortexSystem(
+        tags: ["circle"],
+        birthRate: 0,
+        emissionDuration: 0.2,
+        lifespan: 0.9,
+        speed: 1.0,
+        speedVariation: 0.4,
+        angleRange: .degrees(360),
+        colors: .ramp(.white, .white.opacity(0)),
+        size: 0.08,
+        sizeVariation: 0.06
+    )
+}
+
 struct BurstOverlay: View {
     let burstPoint: CGPoint?
     let effect: VortexSystem
@@ -181,6 +196,7 @@ struct BurstOverlay: View {
                         .tag("square")
                 }
             }
+            .id(effect)
             .allowsHitTesting(false)
             .ignoresSafeArea()
             .onChange(of: burstPoint) { _, newValue in
