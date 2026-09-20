@@ -9,7 +9,7 @@ struct WorldScene: View {
 
     var body: some View {
         switch world.id {
-        case "contrast": ContrastWorldView()
+        case "contrast": ContrastWorldView(onTouch: onTouch)
         case "bubbles": BubblesWorldView(onTouch: onTouch)
         case "starrain": StarRainWorldView(onTouch: onTouch)
         case "farm": FarmWorldView(interactions: interactions, volume: volume, onTouch: onTouch)
@@ -23,6 +23,7 @@ struct WorldScene: View {
 }
 
 struct ContrastWorldView: View {
+    let onTouch: (CGPoint, VortexSystem) -> Void
     @State private var drift = false
 
     var body: some View {
@@ -47,6 +48,10 @@ struct ContrastWorldView: View {
         }
         .onAppear { drift = true }
         .animation(.easeInOut(duration: 6).repeatForever(autoreverses: true), value: drift)
+        .onTapGesture { location in
+            onTouch(location, .monoBurst)
+        }
+        .accessibilityLabel("Black and white patterns")
     }
 }
 
