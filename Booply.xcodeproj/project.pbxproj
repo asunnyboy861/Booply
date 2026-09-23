@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AA00000000000000000000AC /* Vortex in Frameworks */ = {isa = PBXBuildFile; productRef = AA00000000000000000000AB /* Vortex */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6A99A2E1305B69FD00A56839 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -22,10 +26,6 @@
 			remoteInfo = Booply;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXBuildFile section */
-		AA00000000000000000000AC /* Vortex in Frameworks */ = {isa = PBXBuildFile; productRef = AA00000000000000000000AB /* Vortex */; };
-/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6A99A2D3305B69FB00A56839 /* Booply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Booply.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,13 +57,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA00000000000000000000AC /* Vortex in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6A99A2DD305B69FB00A56839 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +121,6 @@
 			buildConfigurationList = 6A99A2F7305B69FD00A56839 /* Build configuration list for PBXNativeTarget "BooplyTests" */;
 			buildPhases = (
 				6A99A2DC305B69FD00A56839 /* Sources */,
-				6A99A2DD305B69FD00A56839 /* Frameworks */,
 				6A99A2DE305B69FD00A56839 /* Resources */,
 			);
 			buildRules = (
@@ -201,13 +193,13 @@
 			);
 			mainGroup = 6A99A2CA305B69FB00A56839;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AA00000000000000000000AA /* XCRemoteSwiftPackageReference "Vortex" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6A99A2D4305B69FB00A56839 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
-			packageReferences = (
-				AA00000000000000000000AA /* XCRemoteSwiftPackageReference "Vortex" */,
-			);
 			targets = (
 				6A99A2D2305B69FB00A56839 /* Booply */,
 				6A99A2DF305B69FD00A56839 /* BooplyTests */,
@@ -215,24 +207,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		AA00000000000000000000AA /* XCRemoteSwiftPackageReference "Vortex" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twostraws/Vortex";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AA00000000000000000000AB /* Vortex */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Vortex;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6A99A2D1305B69FB00A56839 /* Resources */ = {
@@ -423,13 +397,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Booply lets parents add an optional growth photo to the Milestone Album. Photos stay on your device or in your own iCloud.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Booply lets parents add an optional growth photo to the Milestone Album. Photos stay on your device or in your own iCloud.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -457,13 +431,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Booply lets parents add an optional growth photo to the Milestone Album. Photos stay on your device or in your own iCloud.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Booply lets parents add an optional growth photo to the Milestone Album. Photos stay on your device or in your own iCloud.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -490,7 +464,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
@@ -512,7 +486,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
@@ -533,7 +507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -553,7 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = JP4TN5PTS3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -609,6 +583,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA00000000000000000000AA /* XCRemoteSwiftPackageReference "Vortex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/Vortex";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA00000000000000000000AB /* Vortex */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Vortex;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A99A2CB305B69FB00A56839 /* Project object */;
 }
