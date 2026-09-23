@@ -62,8 +62,20 @@ struct SettingsView: View {
                     } label: {
                         Label("AI Configuration", systemImage: "key.fill")
                     }
+                } header: {
+                    Text("AI")
                 } footer: {
-                    Text("Apple Intelligence writes receipt lines on device when available. Add your own key to power photo tagging and the weekly report.")
+                    Text("Core features never depend on third-party AI. Apple Intelligence writes receipt lines on device when available, with a local template fallback. Adding your own API key is optional.")
+                }
+
+                Section {
+                    Label("Zero data collected", systemImage: "checkmark.shield.fill")
+                        .foregroundStyle(Theme.sageDeep)
+                    Text("No ads, no accounts, no tracking, no analytics. Play sessions are fully offline. The only network calls are the optional feedback form you send to us, and optional AI requests that go directly to the provider you choose with your own key.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                } header: {
+                    Text("Data & Privacy")
                 }
 
                 Section {
@@ -98,13 +110,6 @@ struct SettingsView: View {
                 }
 
                 Section {
-                    HStack {
-                        Spacer()
-                        Label("Zero data collected", systemImage: "checkmark.shield.fill")
-                            .font(.footnote)
-                            .foregroundStyle(Theme.sageDeep)
-                        Spacer()
-                    }
                     Text(appVersion)
                         .font(.footnote)
                         .foregroundStyle(.secondary)

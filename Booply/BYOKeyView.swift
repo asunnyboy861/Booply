@@ -29,7 +29,7 @@ struct BYOKeyView: View {
             } header: {
                 Text("Your Own API Key")
             } footer: {
-                Text("The key is stored in the iOS Keychain and is never logged or included in backups of your feedback. With a key, milestone photo tagging and the weekly report run without limits.")
+                Text("Optional. The key is stored in the iOS Keychain and never sent to us. Without a key, all core features work and receipts use on-device Apple Intelligence or a local template. If you add a key, only the photo or session statistics you choose to process are sent directly to the provider you selected — nothing else is shared.")
             }
 
             Section {
